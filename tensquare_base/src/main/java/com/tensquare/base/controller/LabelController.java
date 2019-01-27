@@ -47,7 +47,7 @@ public class LabelController {
     @PostMapping("search")
     public Result findSearch(@RequestBody Label label){
 
-        return new Result(true,StatusCode.OK,"查询成功",labelService.findSerch());
+        return new Result(true,StatusCode.OK,"查询成功",labelService.findSerch(label));
     }
 }
 
